@@ -22,7 +22,9 @@ data4 = pd.read_csv('../data/pitch_movement minimum250 19ver.csv')
 data33=data.columns.values
 df=pd.DataFrame(data33, columns=['text'])
 df['last_name'] = df.text.str.split(' ').str[1] #last_name만 따로 데이터에 담아두었음.
-print(df['last_name'])
+data44=df['last_name'] = df.text.str.split(' ').str[1]
+print(data44)
+data44.to_csv("seven.csv", mode='w')
 print("------------------------------------------------------------------------")
 
 # print(df['last_name'].values)

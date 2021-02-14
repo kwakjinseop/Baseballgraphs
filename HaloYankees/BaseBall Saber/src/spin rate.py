@@ -33,7 +33,7 @@ bbb=data2019.iloc[0:10];
 
 cleardata2 = DataFrame(bbb, columns=['player_name'])
 
-# print(cleardata2)
+print(cleardata2)
 
 result=[]
 result2=[]
@@ -53,16 +53,16 @@ with open('player_yes.csv','w',newline='') as f:
 with open('player_no.csv','w',newline='') as f:
     writer = csv.writer(f)
     writer.writerow(result2)
-# print(kkk)
-# print(result2)
+print(kkk)
+print(result2)
 
 
-# print(aaa)
-# print("====================================================================")
-# print(bbb)
+print(aaa)
+print("====================================================================")
+print(bbb)
 
 
-# df_vertical = DataFrame(data2, columns=[])
-# print(aaa)
+df_vertical = DataFrame(data2, columns=[])
+print(aaa)
 
 
