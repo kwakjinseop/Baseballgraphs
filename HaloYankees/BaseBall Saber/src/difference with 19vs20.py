@@ -20,32 +20,33 @@ data4 = pd.read_csv('../data/pitch_movement minimum250 19ver.csv')
 
 # print(data.columns.values)
 data33=data.columns.values
-df=pd.DataFrame(data33, columns=['text'])
-df['last_name'] = df.text.str.split(' ').str[1] #last_name만 따로 데이터에 담아두었음.
-data44=df['last_name'] = df.text.str.split(' ').str[1]
-print(data44)
-data44.to_csv("seven.csv", mode='w')
-print("------------------------------------------------------------------------")
-
-# print(df['last_name'].values)
-
-last_names = df['last_name'].values
-for lastname in last_names:
-    tmp=data4[data4['last_name'] == lastname]
-    tmp=tmp['rise']
-# print('Bieber' in last_names)
-
-    print(tmp)
-# if df['last_name'][0]==data4['last_name']:
-print("===============================================================")
-for lastname in last_names:
-    tmp2=data3[data3['last_name']==lastname]
-    tmp2=tmp2['rise']
-
-    print(tmp2)
-
-
-# data=data[data['player_name']=='Corbin Burnes']
-# data1['player_name']=data1['player_name'].apply(extract_firstname)
-# print(data1['player_name'])
-
+print(data33)
+# df=pd.DataFrame(data33, columns=['text'])
+# df['last_name'] = df.text.str.split(' ').str[1] #last_name만 따로 데이터에 담아두었음.
+# data44=df['last_name'] = df.text.str.split(' ').str[1]
+# print(data44)
+# data44.to_csv("seven.csv", mode='w')
+# print("------------------------------------------------------------------------")
+#
+# # print(df['last_name'].values)
+#
+# last_names = df['last_name'].values
+# for lastname in last_names:
+#     tmp=data4[data4['last_name'] == lastname]
+#     tmp=tmp['rise']
+# # print('Bieber' in last_names)
+#
+#     print(tmp)
+# # if df['last_name'][0]==data4['last_name']:
+# print("===============================================================")
+# for lastname in last_names:
+#     tmp2=data3[data3['last_name']==lastname]
+#     tmp2=tmp2['rise']
+#
+#     print(tmp2)
+#
+#
+# # data=data[data['player_name']=='Corbin Burnes']
+# # data1['player_name']=data1['player_name'].apply(extract_firstname)
+# # print(data1['player_name'])
+#
